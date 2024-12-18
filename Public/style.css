@@ -2,10 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-
-    
+    font-family: Arial, Helvetica, sans-serif;    
 }
+
+
 
 #navigation {
     
@@ -34,13 +34,14 @@
     display: inline-block;
     text-decoration: none;
     padding: 0px 10px;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .contact_button {
     border-radius: 50px;
     padding: 10px 15px;
     font-size: 1.2em;
+    color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0);
     border: 0;
     transition: 1s ease;
@@ -90,13 +91,14 @@ img {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    color: rgb(123, 67, 67);
   }
   .center_title_text {
     font-size: 2.5em;
   }
 
 
-  #first_section {
+  .sections {
     width: 100% vw;
     display: flex;
     justify-content: space-evenly;
@@ -115,19 +117,24 @@ img {
   .text_header {
     font-size: 1.7em;
     padding-bottom: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(123, 67, 67);
   }
 
   #ingredients_img {
     width: 500px;
     height: 400px;
+    margin-bottom: 30px;
     border-radius: 30px;
     display: flex;
     flex-wrap: wrap;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
 
-  #second_section {
+  @media screen {
+    
+  }
+
+  .alternate_sections {
     width: 100% vw;
     display: flex;
     justify-content: space-evenly;
@@ -148,12 +155,23 @@ img {
     border-radius: 15px; 
     margin-bottom: 30px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 1s ease;
+  }
+  .card_container:hover {
+    width: 450px;
+    height: 300px;
+    text-align: center;
+    justify-content: space-around;
+    border-radius: 15px; 
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 
   .card_header {
     font-size: 2em;
     padding-top: 30px;
     padding-bottom: 30px;
+    color: rgb(123, 67, 67)
     
   }
 
@@ -181,4 +199,21 @@ img {
     background-color: rgb(118, 177, 255);
     cursor: pointer;
     color: white;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(118, 177, 255);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer_links {
+  color: rgb(0, 0, 0);
+}
+.footer_links:hover {
+  color: rgb(255, 255, 255);
 }
